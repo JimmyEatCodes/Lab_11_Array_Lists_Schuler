@@ -163,13 +163,34 @@ import java.util.Scanner;
             return retVal;
         }
 
+public static boolean getYNConfirm(Scanner pipe, String prompt)
+{
+    boolean retVal = false;
+    String input = "";
+    boolean done = false;
 
+    do {
+        System.out.print(prompt + "[YyNn]:  ");
+        input = pipe.nextLine();
+        if(input.isEmpty())
+        {
+            System.out.println("You must enter Y or N!");
+        }else if(input.equalsIgnoreCase("Y")) {
+            retVal = true;
+            done = true;
+        } else if(input.equalsIgnoreCase("N")) {
+        retVal = false;
+        done = true;
+        } else {
+            System.out.println("You must enter Y or N! Not " + input);
+        }
 
+    } while(!done);
+    {
+        return retVal;
+    }
 
-
-
+}
 
 
     }
-
-
