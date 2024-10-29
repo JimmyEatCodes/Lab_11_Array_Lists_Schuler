@@ -12,8 +12,27 @@ import java.util.Scanner;
         public static void main(String[] args)
         {
             Scanner in = new Scanner(System.in);
+
             String SSN = getRegExString(in, "Enter your SSN", "^\\d{3}-\\d{2}-\\d{4}$");
             System.out.println("Your Social Security Number is " + SSN);
+
+      /*
+            boolean confirmation = getYNConfirm(in,"Are you sure you want to confirm?");
+            System.out.println("You chose " + confirmation);
+            double priceRange = getRangedDouble(in,"Enter the price of the item and the program will tell you if it is in range",0.00,99.99);
+            System.out.println("Your test score is " + priceRange);
+            int scoreRange = getRangedInt(in,"Enter the score on the test and the program will tell you if it is in range",0,100);
+            System.out.println("Your test score is " + scoreRange);
+            String name = getNonZeroLenString(in,"Enter your first name");
+            System.out.println("Your name is " + name);
+            double itemPrice = getDouble(in,"Enter the price of the item");
+            System.out.println("The price of the item is " + itemPrice);
+            int itemCount = getInt(in, "Enter how many items there are");
+            System.out.println("There are " + itemCount + " items.");
+
+      */
+
+
         }
 
         public static int getInt(Scanner pipe, String prompt)
@@ -74,7 +93,7 @@ import java.util.Scanner;
                     }
                     else
                     {
-                        System.out.println("You must enter an integer between " + low + " and " + high + "not " + retVal);
+                        System.out.println("You must enter an integer between " + low + " and " + high + " not " + retVal);
                     }
                 }
                 else

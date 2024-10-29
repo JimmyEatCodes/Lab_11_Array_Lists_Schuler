@@ -25,11 +25,11 @@ public class BirthDateTime {
                 highValue = 31;
                 break;
             case 2:
+                highValue = 29;
+                break;
             case 6:
             case 9:
             case 11:
-                highValue = 29;
-                break;
             case 4:
 
                 highValue = 30;
