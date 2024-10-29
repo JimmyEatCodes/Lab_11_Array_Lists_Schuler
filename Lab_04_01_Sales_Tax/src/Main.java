@@ -4,7 +4,7 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.println("input the price of your purchase");
+        System.out.println("Input the price of your purchase: ");
         Scanner in = new Scanner(System.in);
 
 
