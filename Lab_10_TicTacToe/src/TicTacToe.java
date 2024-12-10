@@ -235,8 +235,6 @@ public class TicTacToe {
         if( !(Xflag && Oflag) )
             return false;
 
-
-
         //if it goes all the way through it is a tie
         return true;
     }
